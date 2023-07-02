@@ -3,15 +3,16 @@
 # translateRotateSTL
 # Gery Casiez - 2015
 
+from __future__ import print_function
 import sys, getopt
 import numpy
 from stl import mesh
 import math
 
 def usage():
-	print 'translateRotateSTL.py -i <inputfile> -o <outputfile> -t <x>,<y>,<z> -r <x>,<y>,<z>'
-	print 'Example: translateRotateSTL.py -i model.stl -t 0,50,0 -r 0,0,45'
-	print 'Rotations are defined in degrees'
+	print('translateRotateSTL.py -i <inputfile> -o <outputfile> -t <x>,<y>,<z> -r <x>,<y>,<z>')
+	print('Example: translateRotateSTL.py -i model.stl -t 0,50,0 -r 0,0,45')
+	print('Rotations are defined in degrees')
 
 def main(argv):
 	inputfile = ''
